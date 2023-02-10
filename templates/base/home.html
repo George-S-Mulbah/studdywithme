@@ -8,7 +8,7 @@
         <div>
           <h5>
             {{room.id}} --- 
-            <a href='/room/{{room.id}}'> {{room.name}}</a>
+            <a href="{% url 'room' room.id %}"> {{room.name}}</a>
         </h5>
         </div>
         {% endfor %}
